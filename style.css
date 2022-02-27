@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+.logo{
+    width:25%;
+    display: flex;
+color: aqua;
+font-size: 22px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+padding: 15px;
+
+}
+.logo img{
+    width: 20%;
+    border: 5px solid aqua;
+    border-radius: 65px;
+}
+
+.nav-list{
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}  
+    .nav-list li a{
+text-decoration: none;
+color: antiquewhite;
+font-size: 18px;
+font-family: Arial, Helvetica, sans-serif;
+
+    }
+.nav-list li{
+    list-style: none;
+    padding: 25px 55px; 
+
+}
+
+.nav-list li a:hover{
+  text-decoration: none;
+  color: rgb(75, 160, 175);
+
+}
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+.background{
+    background: rgba(0, 0, 0, 0.7) url('CODE.jpeg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(180, 167, 149);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 80%;
+}
+
+.firstSection{
+    height: 100vh;
+}
+
+.firstHalf{
+width: 80%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.secondHalf img{
+    width: 70;
+
+}
+
+.text-big{
+    font-size: 25px;
+}
+.btn{
+    padding: 8px 20px;
+    margin: 7px 4px;
+    border: 2px solid whitesmoke;
+    border-radius: 8px;
+    color: white;
+    background: none;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.btn-sm{
+    padding: 6px 10px;
+    vertical-align: middle;
+
+}
+.btn-dark{
+    color: black;
+    border: 2px solid gray;
+}
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 100%;
+    margin: auto;
+}
+.secRight{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 100%;
+    margin: auto;
+}
+.paras{
+    padding: 0px 65px;
+}
+
+.secLeft{
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 100%;
+    margin: auto;
+    flex-direction: row-reverse;
+}
+
+.imgfluid{
+    height: 50%;
+    width: 50%;
+}
+.thumbnail{
+    display: contents;
+}
+.imgfluid2{
+    height: 550px;
+    width: 450px;
+}
+.thumbnail img{
+    border: 2px solid black;
+    border-radius: 28px;
+    margin-top: 19px;
+}
+.sectiontag {
+    padding: 16px 0;
+}
+
+.contact{
+    background-color: rgb(201, 209, 209);
+    height: 800px;
+}
+.form{
+    max-width: 62%;
+    margin: 25px auto;
+}
+
+.form-input{
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    margin: 15px 0;
+    padding: 5px 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.text-center{
+    text-align: center;
+    padding-top: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.text-footer{
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: beige;
+}
+.burger{
+    display: none;
+position: absolute;
+cursor: pointer;
+right: 2%;
+top: 35px;
+}
+.line{
+    width: 33px;
+    background-color: beige;
+    height: 4px;
+    margin: 5px 3px;
+}
+.text-gray-500{
+    align-items: flex-end;
+    size-adjust: 20px;
+}
+
+.row{
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: beige;
+}
+.col-lg-4 .col-md-4{
+    overflow: hidden;
+    padding: 30px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: beige;
+}
+
+@media only screen and ( max-width: 1100px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        transition: all 0.3s ease-out;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 372px;
+    }
+    .v-class-resp {
+        opacity: 0;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+        text-align: center;
+        height: 110%;
+    }
+    .it{
+        height: 80%;
+        width: 70%;
+    }
+    .section{
+        flex-direction: column-reverse;
+    }
+    .logo img{
+        width: 60%;
+    }
+    .secRight{
+height: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+    justify-content: space-evenly;
+    max-width: 100%;
+    margin: auto;
+    }
+    .secleft{
+
+flex-direction: column-reverse;
+        align-items: center;
+    justify-content: space-evenly;
+    max-width: 100%;
+    margin: auto;
+    }
+    .sectiontag{
+        text-align: center;
+        padding: 5px 0;
+    }
+    .text-big{
+        text-align: center;
+        font-size: 20px;
+    }
+    .buttons{
+        text-align: center;
+    }
+    .imgfluid{
+        height: 40%;
+        width: 40%;
+    }
+    .imgfluid2{
+        height: 300px;
+        width: 250px;
+ 
+    }
+    .sectiontag{
+        text-align: center;
+    }
+    #services{
+        text-align: center;
+
+    }
+    .paras{
+        padding: 0px 25px;
+    }
+
+
+}
+@media only screen and ( max-width: 800px){
+  .row{
+      flex-direction: column;
+  }
+}
