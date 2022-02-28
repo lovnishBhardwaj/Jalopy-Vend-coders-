@@ -84,14 +84,17 @@
 <br> <br><br>
 <hr>
 <section class="contact" id="contact">
-     <h2 class="text-center">CONTACT US</h2>
-     <div class="form">
-         <input class="form-input" type="text" name="name" id="name" placeholder="Enter Your Name">
-         <input class="form-input" type="text" name="phone" id="Phone" placeholder="Enter Your Phone Number">
-         <input class="form-input" type="email" name="email" id="email" placeholder="Enter Your Email id">
-               <textarea class="form-input" name="text" id="text" cols="30" rows="10"placeholder="Ellaborate Your Concern"></textarea>
-         <button class="btn btn-dark">Submit</button>
-     </div>
+    <h2 class="text-center">CONTACT US</h2>
+    <div class="form">
+        <form action="" method="get" target="_self">
+         Name:<input class="form-input" type="text" name="name" id="name" placeholder="Enter Your Name" onblur="getVal()">
+         Phone Number:<input class="form-input" type="text" name="phone" id="Phone" placeholder="Enter Your Phone Number">
+         Email Id:<input class="form-input" type="email" name="email" id="email" placeholder="Enter Your Email id">
+         Subject:<input class="form-input" type="text" name="subject" id="subject" placeholder="Enter Your Subject" onblur="getVal()">
+         <textarea class="form-input" name="text" id="text" cols="30" rows="10"placeholder="Enter Your Message here..."></textarea>
+               <button class="btn btn-dark" id="mySubmit" formtarget="_blank">Submit</button>
+        </form>        
+    </div>
 </section>
 <hr>
 <footer class=" background">
@@ -122,10 +125,16 @@
             </section>
         </div>
     </div>
-    <p class="text-footer"->@ crafted by LOVNISH BHARDWAJ</p>
+    <p class="text-footer"->@crafted by LOVNISH BHARDWAJ</p>
   </footer>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="resp.js"></script>
+    <script>
+        function myFunction() {
+            var x =
+            document.getElementById("mySubmit").formtarget = "_self"; 
+        }
+    </script>
 </body>
 </html>
