@@ -236,7 +236,7 @@ top: 35px;
     }
     .navbar{
         flex-direction: column;
-        
+        position: static;
     }
     .burger{
         display: block;
