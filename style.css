@@ -318,7 +318,7 @@ flex-direction: column-reverse;
   }
   .navbar{
     flex-direction: column;
-    position: -webkit-sticky;
+    position: static;
 }
 .box-main{
     height: 90%;
