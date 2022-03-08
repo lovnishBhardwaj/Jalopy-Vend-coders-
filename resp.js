@@ -15,11 +15,11 @@ function getVal(){
 
 $(document).ready(function(){
      $("form").submit(function(){
-          name = $("input[name='name']").validate();
-          phone = $("input[name='phone']").validate();
-          email = $("input[name='email']").validate();
-          subject = $("input[name='subject']").validate();
-          text = $("textarea[name='text']").validate();
+          name = $("input[name='name']").val();
+          phone = $("input[name='phone']").val();
+          email = $("input[name='email']").val();
+          subject = $("input[name='subject']").val();
+          text = $("textarea[name='text']").val();
 
           document.writeln(name);
           document.writeln(phone);
