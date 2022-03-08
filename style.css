@@ -236,8 +236,7 @@ top: 35px;
     }
     .navbar{
         flex-direction: column;
-        transition: all 0.3s ease-out;
-        position: static;
+        
     }
     .burger{
         display: block;
@@ -317,4 +316,8 @@ flex-direction: column-reverse;
   .row{
       flex-direction: column;
   }
+  .navbar{
+    flex-direction: column;
+    position: static;
+}
 }
