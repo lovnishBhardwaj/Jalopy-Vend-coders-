@@ -251,7 +251,7 @@ top: 35px;
         flex-direction: column-reverse;
         max-width: 100%;
         text-align: center;
-        height: 90%;
+        height: 110%;
     }
     .it{
         height: 80%;
@@ -319,5 +319,13 @@ flex-direction: column-reverse;
   .navbar{
     flex-direction: column;
     position: -webkit-sticky;
+}
+.box-main{
+    height: 90%;
+}
+.it{
+    top: 10px;
+    height: 70%;
+    width: 60%;
 }
 }
